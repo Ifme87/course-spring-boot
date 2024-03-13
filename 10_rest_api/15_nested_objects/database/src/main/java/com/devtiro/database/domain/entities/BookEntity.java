@@ -6,12 +6,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@Entity
-@Table(name="books")
+@Data					// Lombok basic annotations
+@AllArgsConstructor		// Lombok creates constructor
+@NoArgsConstructor		// Lombok creates constructor
+@Builder				// Lombok creates object builder
+@Entity					// Spring's JPA Entity - Each instance of the class represents a row in the table.
+@Table(name="books")	// Spring's mapping entity to table in DB
 public class BookEntity {
 
     @Id
